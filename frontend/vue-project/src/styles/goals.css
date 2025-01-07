@@ -1,14 +1,12 @@
-.goal-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
+.goals-container {
+  margin: 20px 45px; /* Ülemine ja alumine ruum, tsentreerib horisontaalselt */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 1500px; 
+  min-height: 630px; 
+}
   
   .goal-card h3 {
     font-size: 1.2rem;
@@ -34,15 +32,6 @@
     font-size: 1rem;
     font-weight: bold;
     color: #333333;
-  }
-  .goals-container {
-    margin: 20px 45px; /* Ülemine ja alumine ruum, tsentreerib horisontaalselt */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1500px; 
-    min-height: 500px; 
   }
   
   .goals-overview {
@@ -71,66 +60,70 @@
   }
   
   /* +New Goal nupu stiil */
-.new-goal-button {
-  background-color: #459aff;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  padding: 12px 20px;
-  margin: 20px 0;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  .new-goal-button {
+    background-color: #459aff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 12px 20px;
+    margin: 20px auto;
+    display: block; /* Tsentreerib nupu */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-.new-goal-button:hover {
-  transform: scale(1.05);
-}
-
-/* Lubaduste sisestuskast */
-.promise-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 10px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-
-.promise-input {
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 1rem;
-  color: #64748b;
-}
-
-.promise-input::placeholder {
-  color: #64748b;
-}
-
-.send-button {
-  background-color: #5661f6;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
-
-.send-button img {
-  width: 20px;
-  height: 20px;
-}
-
-.send-button:hover {
-  transform: scale(1.1);
-}
+  .new-goal-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .promise-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    width: 1500px; 
+  }
+  
+  .promise-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #64748b;
+  }
+  
+  .promise-input::placeholder {
+    color: #64748b;
+  }
+  
+  .send-button {
+    background-color: #5661f6;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .send-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .send-button:hover {
+    transform: scale(1.1);
+  }
+  
