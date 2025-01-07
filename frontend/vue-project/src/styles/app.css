@@ -1,0 +1,17 @@
+#app {
+    display: flex;
+    height: 100vh; /* Täidab kogu ekraani kõrguse */
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Sama laius kui navigation-bar */
+    padding: 20px;
+    flex: 1; /* Täidab navigeerimisriba kõrval oleva ruumi */
+    background-color: #f9f9f9;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
