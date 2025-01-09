@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <!-- Goals Overview kast -->
+  <div class="main-content">
+    <!-- Goals Container -->
     <div class="goals-container">
       <div class="goals-overview">
         <section>
@@ -18,10 +18,12 @@
       </div>
     </div>
 
-    <!-- +New Goal nupp -->
-    <button class="new-goal-button">+ New Goal</button>
+    <!-- +New Goal Button -->
+    <div class="new-goal-container">
+      <button class="new-goal-button">+ New Goal</button>
+    </div>
 
-    <!-- "Today I promise to..." kast -->
+    <!-- "Today I promise to..." Container -->
     <div class="promise-container">
       <input
         type="text"
