@@ -8,6 +8,7 @@
   width: calc(100% - 80px); /* Lahutab mõlemalt poolt kokku 80px (40px kummalegi küljele) */
   max-width: 1600px; /* Maksimaalne laius suurte ekraanide jaoks */
   min-width: 800px; /* Minimaalne laius väiksemate ekraanide jaoks */
+  min-height: 600px;
 }
 
 /* Goals Overview */
@@ -17,11 +18,13 @@
   width: 100%;
 }
 
+/* Goal Card Paigutus */
 .goals {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Asetab elemendid uuele reale, kui ruumi ei jätku */
+  gap: 100px; /* Vahed kastide vahel */
+  justify-content: flex-start; /* Paigutab elemendid vasakule */
+  padding: 20px; /* Lisab ruumi kastide äärte ja konteineri vahele */
 }
 
 section {
@@ -107,3 +110,34 @@ section h2 {
 .send-button:hover {
   transform: scale(1.1);
 }
+
+.goal-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto; /* Tsentreerib horisontaalselt */
+}
+
+
+.progress-circle svg {
+  transform: rotate(-90deg); /* Alustab progressi ülevalt */
+}
+
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333333;
+}
+

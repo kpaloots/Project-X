@@ -1,50 +1,56 @@
 <template>
-  <div class="goal-card">
-    <h3>{{ goal.title }}</h3>
+  <div class="goal-container" @click="goToYourGoals">
+    <!-- Pealkiri -->
+    <h3 class="goal-title">{{ goal.title }}</h3>
+    <!-- Progressi ring -->
     <div class="progress-circle">
-      <svg width="100" height="100" viewBox="0 0 100 100">
-        <!-- Gradient määratlus -->
+      <svg width="140" height="140" viewBox="0 0 140 140">
         <defs>
           <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="#459AFF" />
             <stop offset="100%" stop-color="#6054FF" />
           </linearGradient>
         </defs>
-        <!-- Ringid -->
-        <circle cx="50" cy="50" r="45" stroke="#e6e6e6" stroke-width="10" fill="none" />
+        <!-- Taustaring -->
+        <circle cx="70" cy="70" r="60" stroke="#e6e6e6" stroke-width="10" fill="none" />
+        <!-- Progressiring -->
         <circle
-          cx="50"
-          cy="50"
-          r="45"
+          cx="70"
+          cy="70"
+          r="60"
           stroke="url(#progressGradient)"
           stroke-width="10"
-          stroke-linecap="round"
           fill="none"
+          stroke-linecap="round"
           :stroke-dasharray="circumference"
           :stroke-dashoffset="dashOffset"
-          transform="rotate(-90 50 50)"
         />
       </svg>
-      <span class="progress-label">{{ goal.progress }}%</span>
+      <!-- Protsent -->
+      <div class="progress-label">{{ goal.progress }}%</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'GoalCard',
-  props: {
-    goal: Object,
-  },
+  name: "GoalCard",
+  props: ["goal"],
   computed: {
     circumference() {
-      return 2 * Math.PI * 45 // 2 * π * raadius
+      return 2 * Math.PI * 60;
     },
     dashOffset() {
-      return this.circumference * (1 - this.goal.progress / 100)
+      return this.circumference - (this.goal.progress / 100) * this.circumference;
     },
   },
-}
+  methods: {
+    goToYourGoals() {
+      console.log(`Navigating to ${this.goal.title}`);
+    },
+  },
+};
 </script>
+
 
 <style src="../styles/goals.css"></style>

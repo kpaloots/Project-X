@@ -1,17 +1,25 @@
 #app {
-    display: flex;
-    height: 100vh; /* Täidab kogu ekraani kõrguse */
-  }
+  display: flex;
+  height: 100vh; /* Täidab kogu ekraani kõrguse */
+  width: 100%; /* Võtab kogu saadavaloleva laiuse */
+  overflow-y: hidden;
+}
+
   
   .main-content {
-    margin-left: 250px; /* Sama laius kui navigation-bar */
+    margin-left: 125px; 
     padding: 20px;
     flex: 1; /* Täidab navigeerimisriba kõrval oleva ruumi */
     background-color: #f9f9f9;
+    box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
+  html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden; /* Väldime horisontaalset kerimist */
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
