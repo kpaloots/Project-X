@@ -7,19 +7,16 @@
 
   
   .main-content {
-    margin-left: 125px; 
-    padding: 20px;
-    flex: 1; /* Täidab navigeerimisriba kõrval oleva ruumi */
-    background-color: #f9f9f9;
     box-sizing: border-box;
+    width: calc(100vw - 250px - 40px); /* Navbar width + desired margins */
+    padding: 20px;
+    margin: 0 auto; /* Optional centering */
+    margin-left: 0;
   }
 
-  html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow-x: hidden; /* Väldime horisontaalset kerimist */
+  body {
+    padding-left: 250px; /* Width of the navbar */
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
