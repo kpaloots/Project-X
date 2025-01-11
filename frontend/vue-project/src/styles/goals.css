@@ -6,8 +6,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(100% - 80px); /* Lahutab mõlemalt poolt kokku 80px (40px kummalegi küljele) */
-  max-width: 1600px; /* Maksimaalne laius suurte ekraanide jaoks */
-  min-width: 800px; /* Minimaalne laius väiksemate ekraanide jaoks */
+  width: 90%; 
+  max-width: 100%;
 }
 
 /* Goals Overview */
@@ -68,8 +68,8 @@ section h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto; /* Tsentreerib konteineri */
   width: calc(100% - 80px); /* Sama loogika nagu Goals Container */
-  max-width: 1600px;
-  min-width: 800px;
+  width: 90%; 
+  max-width: 100%;
 }
 
 
