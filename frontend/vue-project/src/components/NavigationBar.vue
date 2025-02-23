@@ -4,7 +4,7 @@
       <div class="header-container">
         <div class="logo-container">
           <img src="@/assets/icons/logo.png" alt="Logo" class="logo" />
-          <h1 class="app-name">LOREM</h1>
+          <h1 class="app-name">ASBYN</h1>
         </div>
         <button class="new-goal-btn">+ New goal</button>
       </div>
